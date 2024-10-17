@@ -3,22 +3,22 @@ const songs = [
     {
         title: "Saajan Ve",
         artist: "Darshan Raval",
-        src: "songs/Saajan ve.mp3", // Use relative path
-        cover: "Covers/saajan ve cover.jpg", // Use relative path
+        src: "Saajan ve.mp3", // Use relative path
+        cover: "saajan ve cover.jpg", // Use relative path
         lyrics: "Lyrics for song 1..."
     },
     {
         title: "Mannat",
         artist: "Darshan Raval",
-        src: "songs/Mannat.mp3", // Use relative path
-        cover: "Covers/Mannat cover.jpg", // Use relative path
+        src: "Mannat.mp3", // Use relative path
+        cover: "Mannat cover.jpg", // Use relative path
         lyrics: "Lyrics for song 2..."
     },
     {
         title: "Jannat Ve",
         artist: "Darshan Raval",
-        src: "songs/Jannat ve.mp3", // Use relative path
-        cover: "Covers/jannat ve cover.jpg", // Use relative path
+        src: "Jannat ve.mp3", // Use relative path
+        cover: "jannat ve cover.jpg", // Use relative path
         lyrics: "Lyrics for song 3..."
     }
     
