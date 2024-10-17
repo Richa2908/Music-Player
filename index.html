@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="music-player">
+        <h1>Darshan's Playlist</h1>
+        <div class="track-info">
+            <img id="track-cover" src="Covers/saajan ve cover.jpg" alt="Album Cover" />
+            <h2 id="track-title">Saajan Ve</h2>
+            <h3 id="track-artist">Darshan Raval</h3>
+            <p id="track-lyrics"></p>
+        </div>
+        <audio id="audio" controls>
+            <source id="audio-source" src="songs/Saajan ve.mp3" type="audio/mpeg">
+            Your browser does not support the audio tag.
+        </audio>
+        <div class="controls">
+            <button id="prev">Prev</button>
+            <button id="play">Play</button>
+            <button id="next">Next</button>
+            <button id="repeat">Repeat</button>
+            <button id="shuffle">Shuffle</button>
+        </div>
+        <div class="social-sharing">
+            <button id="share-facebook">Share on Facebook</button>
+            <button id="share-whatsapp">Share on Whatsapp</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

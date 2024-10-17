@@ -1,0 +1,94 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: skyblue; /* Dark background */
+    color: darkorange; /* White text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: background-color 0.3s;
+}
+
+.music-player {
+    background-color: whitesmoke; /* Darker container */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 300px;
+}
+
+.track-info {
+    margin-bottom: 20px;
+}
+
+#track-cover {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px; /* Player title */
+    color: royalblue;
+    margin-bottom: 20px;
+}
+
+h2, h3 {
+    margin: 5px 0;
+}
+
+.controls button {
+    margin: 5px;
+    padding: 10px 15px;
+    background-color: #1db954; /* Spotify green */
+    color: white;
+    border: none;
+    border-radius: 50px; /* Rounded buttons */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.controls button:hover {
+    background-color: #1ed760; /* Lighter green on hover */
+}
+
+
+.social-sharing {
+    margin: 10px 0;
+}
+
+.social-sharing button {
+    margin: 5px;
+    padding: 10px;
+    background-color: #4267B2; /* Facebook color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.social-sharing button:hover {
+    background-color: #365899; /* Darker Facebook color */
+}
+
+/* Light theme styles */
+.light {
+    background-color: #ffffff; /* Light background */
+    color: #000000; /* Black text */
+}
+
+.light .music-player {
+    background-color: #f4f4f4; /* Light container */
+    color: #000000;
+}
+
+.light .controls button {
+    background-color: #007BFF; /* Light theme button color */
+}
+
+.light .controls button:hover {
+    background-color: #0056b3; /* Lighter blue on hover */
+}
