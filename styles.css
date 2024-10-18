@@ -60,6 +60,7 @@ h2, h3 {
     margin: 10px 0;
 }
 
+
 .social-sharing button {
     margin: 5px;
     padding: 10px;
@@ -68,6 +69,11 @@ h2, h3 {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.social-sharing .share-whatsapp {
+    background-color: green;
 }
 
 .social-sharing button:hover {
