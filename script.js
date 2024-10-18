@@ -3,22 +3,22 @@ const songs = [
     {
         title: "Saajan Ve",
         artist: "Darshan Raval",
-        src: "Saajan ve.mp3", // Use relative path
-        cover: "saajan ve cover.jpg", // Use relative path
+        src: "songs/Saajan ve.mp3", // Use relative path
+        cover: "cover/saajan ve cover.jpg", // Use relative path
         lyrics: "Lyrics for song 1..."
     },
     {
         title: "Mannat",
         artist: "Darshan Raval",
-        src: "Mannat.mp3", // Use relative path
-        cover: "Mannat cover.jpg", // Use relative path
+        src: "songs/Mannat.mp3", // Use relative path
+        cover: "cover/Mannat cover.jpg", // Use relative path
         lyrics: "Lyrics for song 2..."
     },
     {
         title: "Jannat Ve",
         artist: "Darshan Raval",
-        src: "Jannat ve.mp3", // Use relative path
-        cover: "jannat ve cover.jpg", // Use relative path
+        src: "songs/Jannat ve.mp3", // Use relative path
+        cover: "cover/jannat ve cover.jpg", // Use relative path
         lyrics: "Lyrics for song 3..."
     }
     
@@ -55,10 +55,10 @@ function loadSong(song) {
 playButton.addEventListener("click", () => {
     if (audio.paused) {
         audio.play();
-        playButton.innerText = "Pause";
+        playButton.innerHTML= '<i class="fa-solid fa-pause"></i>';
     } else {
         audio.pause();
-        playButton.innerText = "Play";
+        playButton.innerHTML = '<i class="fa-solid fa-play"></i>';
     }
 });
 
@@ -83,13 +83,13 @@ document.getElementById("next").addEventListener("click", () => {
 // Toggle repeat
 repeatButton.addEventListener("click", () => {
     isRepeated = !isRepeated;
-    repeatButton.style.backgroundColor = isRepeated ? "#1ed760" : "#1db954";
+    repeatButton.style.backgroundColor = isRepeated ? "#1ed760" : "rgb(78, 188, 231)";
 });
 
 // Toggle shuffle
 shuffleButton.addEventListener("click", () => {
     isShuffled = !isShuffled;
-    shuffleButton.style.backgroundColor = isShuffled ? "#1ed760" : "#1db954";
+    shuffleButton.style.backgroundColor = isShuffled ? "#1ed760" : "rgb(78, 188, 231)";
 });
 
 // Social sharing functionality

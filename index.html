@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon_io/site.webmanifest">
     <title>Music Player</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -10,27 +14,28 @@
     <div class="music-player">
         <h1>Darshan's Playlist</h1>
         <div class="track-info">
-            <img id="track-cover" src="saajan ve cover.jpg" alt="Album Cover" />
+            <img id="track-cover" src="cover/saajan ve cover.jpg" alt="Album Cover" />
             <h2 id="track-title">Saajan Ve</h2>
             <h3 id="track-artist">Darshan Raval</h3>
             <p id="track-lyrics"></p>
         </div>
         <audio id="audio" controls>
-            <source id="audio-source" src="Saajan ve.mp3" type="audio/mpeg">
+            <source id="audio-source" src="cover/Saajan ve.mp3" type="audio/mpeg">
             Your browser does not support the audio tag.
         </audio>
         <div class="controls">
-            <button id="prev">Prev</button>
-            <button id="play">Play</button>
-            <button id="next">Next</button>
-            <button id="repeat">Repeat</button>
-            <button id="shuffle">Shuffle</button>
+            <button id="repeat"><i class="fa-solid fa-repeat"></i></button>
+            <button id="prev"><i class="fa-solid fa-circle-arrow-left"></i></i></button>
+            <button id="play"><i class="fa-solid fa-play"></i></button>
+            <button id="next"><i class="fa-solid fa-circle-arrow-right"></i></button>
+            <button id="shuffle"><i class="fa-solid fa-shuffle"></i></button>
         </div>
         <div class="social-sharing">
-            <button id="share-facebook">Share on Facebook</button>
-            <button id="share-whatsapp">Share on Whatsapp</button>
+            <button id="share-facebook">Facebook <i class="fa-brands fa-facebook"></i></button>
+            <button class="share-whatsapp" id="share-whatsapp">Whatsapp <i class="fa-brands fa-whatsapp"></i></button>
         </div>
     </div>
     <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/594eec382c.js" crossorigin="anonymous"></script>
 </body>
 </html>
